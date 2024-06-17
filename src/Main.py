@@ -20,7 +20,7 @@ while True:
 
         counter += 1
 
-        if faceRec.faceMatch:
+        if faceRec.getFaceMatch():
             cv2.putText(frame, 'MATCH!', (20,450), cv2.FONT_HERSHEY_PLAIN, 2, (0,255,0), 3)
             cv2.putText(frame, 'Similarity Score: '+str(faceRec.getSimilarityScore())+'%', (210,450), cv2.FONT_HERSHEY_PLAIN, 2, (0,255,0), 3)
         else:

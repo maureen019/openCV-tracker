@@ -74,6 +74,16 @@ class RecogniseFace:
         similarity = (1 - distance) * 100
         res = np.round(similarity, 2)
         return res
-    
+
+    def getFaceMatch(self):
+        return self.faceMatch
+
     def getSimilarityScore(self):
         return self.similarityScore
+
+    def getReferenceImage(self):
+        return self.referenceImage
+    
+    def setReferenceImage(self, img):
+        self.referenceImage = img
+        return self
