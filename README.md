@@ -13,14 +13,15 @@ https://docs.opencv.org/3.4/d8/dfe/classcv_1_1VideoCapture.html#a85b55cf6a4a5045
 https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
 
 # Setting up your venv
-pip install opencv-python deepface
-a pop-up will show asking to create a virtual environment - click Yes
-
-# Activating venv
 python -m venv venv
 cd openCV-tracker
-source venv/bin/activate (MacOS) or venv\Scripts\activate (Windows)
+
+# Activating venv
+venv\Scripts\activate (Windows) OR source venv/bin/activate (MacOS)
+
+# Installing dependencies
 pip install -r requirements.txt
+pip install opencv-python deepface
 
 # Running the program
 Make sure you're in the root directory (C:\~\openCV-tracker)
