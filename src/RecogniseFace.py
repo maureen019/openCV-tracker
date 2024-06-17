@@ -25,6 +25,9 @@ class RecogniseFace:
         if self.faceClassifier.empty():
             raise ValueError("Failed to load Haar Cascade Classifier")
 
+    def test(self):
+        pass
+
     def detectFaces(self, img):
         """
         Function to detect faces
