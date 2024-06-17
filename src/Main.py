@@ -7,6 +7,8 @@ cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 counter = 0
 faceRec = RecogniseFace()
 
+# TODO: Implement more angles for face detection, train the model with more images using a library
+
 while True:
     ret, frame = cap.read()
 

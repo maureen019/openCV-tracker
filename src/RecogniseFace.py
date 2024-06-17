@@ -6,10 +6,8 @@ class RecogniseFace:
     """
     Class to detect faces and verify it against the reference image
 
-    credit for detectFaces(): 
-        https://www.youtube.com/watch?v=i3sLv1sus0I
-    credit for checkFace():
-        https://www.youtube.com/watch?v=pQvkoaevVMk
+    credit for detectFaces(): https://www.youtube.com/watch?v=i3sLv1sus0I
+    credit for checkFace(): https://www.youtube.com/watch?v=pQvkoaevVMk
 
     """
     def __init__(self):
