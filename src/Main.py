@@ -3,14 +3,14 @@ import cv2
 import numpy as np
 from RecogniseFace import RecogniseFace
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-counter = 0
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # open the camera and what media file is accessed
+counter = 0  # ticks
 faceRec = RecogniseFace()
 
 # TODO: Implement more angles for face detection, train the model with more images using a library
 
 while True:
-    ret, frame = cap.read()
+    ret, frame = cap.read()  # read each frame, returns boolean and the frame
 
     if ret: # if frame exists
         frame = faceRec.detectFaces(frame)
