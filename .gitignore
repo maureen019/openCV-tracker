@@ -1,2 +1,2 @@
 # .gitignore
-openCV-tracker/venv
+**/venv
